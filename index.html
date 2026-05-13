@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MØØNPUP - Official</title>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+/* ปรับโทนสีตามบรีฟ: ฟ้าอ่อน ฟ้าเข้ม เทาเข้ม */
+--bg:#F0F7F9; 
+--main:#68B5D1; /* ฟ้าหลัก */
+--dark:#3E8CB3; /* ฟ้าเข้ม */
+--accent:#2F3A3E; /* เทาเข้ม */
+--pink:#68B5D1; 
+--white:#FFFFFF;
+--glow:rgba(104, 181, 209, 0.4);
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Mitr',sans-serif;}
+body{
+background:var(--bg);
+display:flex;
+justify-content:center;
+color: var(--accent);
+}
+.container{
+max-width:500px;
+width:100%;
+padding:20px 15px 40px;
+}
+.section{
+background: var(--white);
+border-radius:20px;
+padding:25px 20px;
+margin-bottom:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+border:2px solid var(--main);
+}
+h1,h2,h3{color:var(--dark); margin-bottom:15px;}
+.center{text-align:center;}
+.logo{
+width:150px;height:150px;
+border-radius:50%;
+overflow:hidden;
+margin:0 auto 20px;
+box-shadow:0 6px 20px var(--glow);
+border: 4px solid var(--white);
+}
+.logo img{width:100%;height:100%;object-fit:cover;}
+.badges{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-bottom:20px;
+}
+.badge{
+background:var(--white);
+padding:8px 16px;
+border-radius:25px;
+box-shadow:0 4px 10px var(--glow);
+font-size:13px;
+color:var(--dark);
+border: 1px solid var(--main);
+}
+.btn{
+display:block;
+text-align:center;
+padding:14px;
+border-radius:25px;
+text-decoration:none;
+margin-top:15px;
+font-weight:500;
+transition: 0.3s;
+}
+.btn-outline{
+background:#fff;
+border:2px dashed var(--main);
+color:var(--dark);
+}
+.btn-main{
+background:var(--main);
+color:#fff;
+}
+.btn-main:hover { background: var(--dark); }
+
+.step{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:12px;
+color: var(--accent);
+}
+.step-num{
+background:var(--main);
+color:var(--white);
+width:26px;height:26px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:13px;
+font-weight: bold;
+}
+.price-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+background:#F0F8FA;
+padding:10px 15px;
+border-radius:15px;
+border-left: 4px solid var(--dark);
+}
+.price-tag{
+background:var(--dark);
+color:#fff;
+padding:3px 12px;
+border-radius:20px;
+font-size:14px;
+}
+.footer{
+text-align:center;
+margin-top:30px;
+}
+.socials{
+display:flex;
+gap:8px;
+justify-content:center;
+margin-top:15px;
+}
+.socials a{
+flex:1;
+max-width:110px;
+text-align:center;
+padding:8px;
+border-radius:25px;
+background:#fff;
+text-decoration:none;
+color:var(--dark);
+font-size:12px;
+border:1px solid var(--main);
+}
+.small{font-size:12px;opacity:.7;margin-top:10px;}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="center">
+        <div class="logo">
+            <img src="https://i.postimg.cc/Bny0gq9P/mi-m-ch-x-293-20260513170607.jpg" alt="MØØNPUP Logo">
+        </div>
+        <h1>MØØNPUP</h1>
+    </div>
+
+    <div class="badges" style="margin-top: 20px;">
+        <span class="badge">🎨 Commission YCH</span>
+        <span class="badge">💎 Commission</span>
+        <span class="badge">✨ Adoptable</span>
+    </div>
+
+    <div class="section">
+        <h3>📋 สถานะคิวงาน</h3>
+        <div class="price-row">
+            <span>คิวปัจจุบัน</span>
+            <span class="price-tag">เปิดรับปกติ</span>
+        </div>
+        <a href="https://docs.google.com/spreadsheets/d/17EoFeVIBc6GD_S-CrXSPLD7xjv7dJCv1/edit?usp=drivesdk&ouid=101592093529456193621&rtpof=true&sd=true" class="btn btn-outline">⭐️ เช็คคิวงาน คลิ๊กที่นี่</a>
+    </div>
+
+    <div class="section">
+        <h3>🎨 บริการของเรา</h3>
+        <div class="price-row">
+            <span>Commission YCH</span>
+            <span class="price-tag">Open</span>
+        </div>
+        <div class="price-row">
+            <span>Commission</span>
+            <span class="price-tag">Open</span>
+        </div>
+        <div class="price-row">
+            <span>Adoptable</span>
+            <span class="price-tag">New</span>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1a323PaMZTCWp8Mun4PCAyGy-e064xicE" class="btn btn-main">⭐️ Base ทั้งหมด คลิ๊กที่นี่</a>
+    </div>
+
+    <div class="section">
+        <h3>📋 เงื่อนไขระยะเวลา</h3>
+        <div class="step">
+            <div class="step-num">1</div>
+            <div>Queue Normal : ภายใน 5-7 วัน</div>
+        </div>
+        <div class="step">
+            <div class="step-num">2</div>
+            <div>Queue X2 : ภายใน 2-3 วัน</div>
+        </div>
+        <div class="step">
+            <div class="step-num">3</div>
+            <div>Queue X3 : ภายใน 24 ชม.</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>📋 ขั้นตอนการสั่งซื้อ</h3>
+        <p class="small" style="margin-bottom:10px;">แจ้งรายละเอียดดังนี้:</p>
+        <div class="step">✅ ประเภทงาน : เบส / ปกติ / จิบิ</div>
+        <div class="step">✅ สเกลงาน : Head / Bust / Half / Thigh</div>
+        <div class="step">✅ งานเดี่ยว / งานคู่ (จำนวนงาน)</div>
+        <div class="step">✅ ระบุคิว : Normal / เร่งx2 / เร่งx3</div>
+    </div>
+
+    <div class="section" style="border-color: var(--accent);">
+        <h3>📍 กฎของร้าน 📍</h3>
+        <ul style="list-style: none; font-size: 14px; color: var(--accent);">
+            <li style="margin-bottom: 8px;">• แก้งานได้ 3 ครั้ง เกินเพิ่มครั้งละ 10฿</li>
+            <li style="margin-bottom: 8px;">• ใช้เชิงพาณิชย์ / Fanart / ของขวัญ ได้</li>
+            <li style="margin-bottom: 8px;">• ให้เครดิตนักวาดทุกครั้ง Cr. Seuauaua</li>
+            <li style="margin-bottom: 8px;">• ไม่คืนเงิน ยกเว้นนักวาดจะขอคืนเอง</li>
+            <li style="margin-bottom: 8px;">• ฝ่าฝืนกฎปรับ 1,000 บาท</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <h3>📱 ช่องทางติดต่อ</h3>
+        <div class="socials">
+            <a href="https://discord.gg/V6YXxEmvXc">Discord</a>
+        </div>
+        <p class="small">MØØNPUP © 2026 - ขอบคุณลูกค้าทุกท่านที่สนับสนุนนะคับ</p>
+    </div>
+
+</div>
+</body>
+  </html>
